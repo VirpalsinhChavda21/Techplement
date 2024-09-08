@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E50;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Auth Section for Homepage */
+.auth-nav {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.auth-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #FF5C5C;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.auth-nav a:hover {
+    background-color: #e14e4e;
+}
+
+/* Homepage Styles */
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-button {
+    padding: 12px 24px;
+    background-color: #00A8FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #007bb5;
+}
+
+/* Courses Page Styles */
+.courses-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.courses-section h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: #1E1E1E;
+    font-size: 2em;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+}
+
+.course-card {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border: 1px solid #BDC3C7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.course-card img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.course-card:hover {
+    border-color: #3498DB;
+}
+
+.course-card button {
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #ff4500;
+}
+
+/* Cart Page Styles */
+.cart-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.cart-item button {
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #ff4500;
+}
+
+/* Contact Page Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Auth Pages Styles */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #00A8FF;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    color: #1E1E1E;
+}
+
+.auth-card input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+}
+
+.auth-card button {
+    padding: 12px 24px;
+    background-color: #FF5C5C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.auth-card button:hover {
+    background-color: #e14e4e;
+}

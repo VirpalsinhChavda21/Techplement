@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function handleContactFormSubmit(event) {
+            event.preventDefault();
+            alert('Thanks for contacting us, we will reach out to you as soon as possible.');
+            document.querySelector('form').reset(); 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="handleContactFormSubmit(event);">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="title" placeholder="Contact Title" required>
+            <textarea name="description" rows="4" placeholder="Description" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section class="courses-section">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            
+            <!-- Technological Courses -->
+            <div class="course-card">
+                <img src="images/course1.jpg" alt="Computer Engineering">
+                <h3>Computer Engineering</h3>
+                <p class="price">$100</p>
+                <button onclick="addToCart('Computer Engineering', '$100', 'course1.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course2.jpg" alt="BCA">
+                <h3>Bachelor of Computer Applications</h3>
+                <p class="price">$120</p>
+                <button onclick="addToCart('BCA', '$120', 'course2.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course3.jpg" alt="Coding Bootcamp">
+                <h3>Coding Bootcamp</h3>
+                <p class="price">$150</p>
+                <button onclick="addToCart('Coding Bootcamp', '$150', 'course3.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course4.jpg" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p class="price">$80</p>
+                <button onclick="addToCart('Digital Marketing', '$80', 'course4.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course5.jpg" alt="Data Science">
+                <h3>Data Science</h3>
+                <p class="price">$200</p>
+                <button onclick="addToCart('Data Science', '$200', 'course5.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course6.jpg" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p class="price">$180</p>
+                <button onclick="addToCart('Cybersecurity', '$180', 'course6.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course7.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p class="price">$140</p>
+                <button onclick="addToCart('Web Development', '$140', 'course7.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course8.jpg" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p class="price">$90</p>
+                <button onclick="addToCart('Graphic Design', '$90', 'course8.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course9.png" alt="Machine Learning">
+                <h3>Machine Learning</h3>
+                <p class="price">$220</p>
+                <button onclick="addToCart('Machine Learning', '$220', 'course9.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course10.jpg" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <p class="price">$250</p>
+                <button onclick="addToCart('Artificial Intelligence', '$250', 'course10.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course11.jpg" alt="UI/UX Design">
+                <h3>UI/UX Design</h3>
+                <p class="price">$110</p>
+                <button onclick="addToCart('UI/UX Design', '$110', 'course11.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course12.jpg" alt="Business Analytics">
+                <h3>Business Analytics</h3>
+                <p class="price">$100</p>
+                <button onclick="addToCart('Business Analytics', '$130', 'course12.jpg')">Buy Now</button>
+            </div>
+
+            <!-- Non-Technical Courses -->
+            <div class="course-card">
+                <img src="images/course13.jpg" alt="Communication Skills">
+                <h3>Communication Skills</h3>
+                <p class="price">$70</p>
+                <button onclick="addToCart('Communication Skills', '$70', 'course13.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course14.jpg" alt="Business Writing">
+                <h3>Business Writing</h3>
+                <p class="price">$60</p>
+                <button onclick="addToCart('Business Writing', '$60', 'course14.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course15.jpg" alt="Content Writing">
+                <h3>Content Writing</h3>
+                <p class="price">$65</p>
+                <button onclick="addToCart('Content Writing', '$65', 'course15.jpg')">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/course16.jpg" alt="Public Speaking">
+                <h3>Public Speaking</h3>
+                <p class="price">$80</p>
+                <button onclick="addToCart('Public Speaking', '$80', 'course16.jpg')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: chavdavirpal37@gmail.com</p>
+        <p>Phone: +91 94284 58078</p>
+        <p>Thanks for checking out our website!</p>
+    </div>
+
+    <script>
+        function addToCart(courseName, price, image) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ courseName, price, image });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${courseName} has been added to your cart!`);
+        }
+    </script>
+</body>
+</html>
