@@ -58,6 +58,22 @@ nav a:hover {
         display: block;
         font-size: 24px;
         cursor: pointer;
+        margin-top: 10px;
+    }
+    .auth-nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-nav a {
+        background-color: #FF5C5C;
+        padding: 10px 20px;
+    }
+
+    .auth-nav a:hover {
+        background-color: #e14e4e;
     }
 }
 
