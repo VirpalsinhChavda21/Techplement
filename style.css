@@ -36,14 +36,28 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* for responsive design in mobile*/
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; 
     }
 
-    nav a {
-        margin: 10px 0;
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 }
 
